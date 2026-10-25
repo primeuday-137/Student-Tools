@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061222">
+  <meta name="description" content="Free student tools, calculators, notes, converters and study resources in one place.">
+  <title>StudentTools — Learn • Study • Grow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="StudentTools home"><span class="brand-icon">🎓</span><span><b>Student<span>Tools</span></b><small>Learn · Study · Grow</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#home">⌂ Home</a>
+      <a href="#tools">▦ All Tools</a>
+      <a href="#study">▤ Study Hub</a>
+      <a href="#notes">✎ Notes</a>
+      <a href="#links">↗ Useful Links</a>
+    </nav>
+    <a class="top-cta" href="#tools">Explore Tools <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HEY STUDENT! 👋</p>
+        <h1>Your one-stop solution<br>for <span>study & daily life.</span></h1>
+        <p class="hero-description">Free tools, study resources, notes, converters, calculators and more — all in one place. Make your student life easier!</p>
+        <form class="searchbar" id="searchForm">
+          <span>⌕</span><input id="searchInput" type="search" placeholder="Search for tools, notes, or anything..." aria-label="Search tools">
+          <button type="submit">Search</button>
+        </form>
+        <div class="popular"><b>Popular:</b><button data-search="calculator">Calculator</button><button data-search="text">Text Tools</button><button data-search="notes">Study Notes</button><button data-search="converter">Unit Converter</button></div>
+        <div class="hero-stats"><div><b>12+</b><span>Useful tools</span></div><div><b>100%</b><span>Free to use</span></div><div><b>Anytime</b><span>Study smarter</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Student working at a desk"><div class="art-glow"></div><div class="floating-note">✦ Small steps<br>Big goals</div><div class="quote-card"><span>“</span><p>A little progress each day adds up to <b>big results.</b></p><small>Keep going! 🚀</small></div></div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-heading"><div><p class="eyebrow">YOUR DIGITAL TOOLKIT</p><h2>Popular Tools <span>✦</span></h2><p>Handy tools designed to save your time.</p></div><span class="count-pill" id="toolCount">12 tools</span></div>
+      <div class="tool-grid" id="toolGrid">
+        <button class="tool-card" data-tool="age"><span class="tool-icon blue">▦</span><span><b>Age Calculator</b><small>Find your age instantly</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="percentage"><span class="tool-icon green">％</span><span><b>Percentage Calculator</b><small>Calculate marks and percentage</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="unit"><span class="tool-icon teal">⇄</span><span><b>Unit Converter</b><small>Length, weight and temperature</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="text"><span class="tool-icon purple">Aa</span><span><b>Text Tools</b><small>Word count and case conversion</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="notes"><span class="tool-icon pink">✎</span><span><b>Notes Maker</b><small>Write and save notes on device</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="timetable"><span class="tool-icon orange">◷</span><span><b>Study Planner</b><small>Plan your study sessions</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="calculator"><span class="tool-icon blue">＋</span><span><b>Quick Calculator</b><small>Basic arithmetic</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="password"><span class="tool-icon violet">♙</span><span><b>Password Generator</b><small>Generate a random password</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="qr"><span class="tool-icon gold">▦</span><span><b>QR Code Maker</b><small>Create a QR for text or links</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="resume"><span class="tool-icon green">▤</span><span><b>Resume Starter</b><small>Build a simple resume draft</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="focus"><span class="tool-icon pink">◉</span><span><b>Focus Timer</b><small>25-minute study timer</small></span><i>↗</i></button>
+        <button class="tool-card" data-tool="pdf"><span class="tool-icon red">PDF</span><span><b>PDF Help</b><small>Learn safe ways to manage PDFs</small></span><i>↗</i></button>
+      </div>
+      <p class="empty-state hidden" id="emptyState">No matching tools found. Try another search.</p>
+    </section>
+
+    <section class="workspace-grid">
+      <section class="panel study-panel" id="study">
+        <div class="section-heading compact"><div><p class="eyebrow">LEARN SOMETHING NEW</p><h2>Study Hub</h2></div><span class="panel-emoji">📚</span></div>
+        <div class="resource-list">
+          <a href="https://www.ncert.nic.in/" target="_blank" rel="noopener"><span class="resource-icon">📘</span><span><b>NCERT Books</b><small>Textbooks and learning resources</small></span><i>↗</i></a>
+          <a href="https://swayam.gov.in/" target="_blank" rel="noopener"><span class="resource-icon">🎓</span><span><b>SWAYAM Courses</b><small>Online courses and learning</small></span><i>↗</i></a>
+          <a href="https://www.ignou.ac.in/" target="_blank" rel="noopener"><span class="resource-icon">🏛️</span><span><b>IGNOU</b><small>Open and distance learning</small></span><i>↗</i></a>
+          <a href="https://scholarship.up.gov.in/" target="_blank" rel="noopener"><span class="resource-icon">📝</span><span><b>UP Scholarship</b><small>Official scholarship portal</small></span><i>↗</i></a>
+        </div>
+      </section>
+      <section class="panel notes-panel" id="notes">
+        <div class="section-heading compact"><div><p class="eyebrow">DON'T LOSE YOUR IDEAS</p><h2>Quick Notes</h2></div><span class="panel-emoji">✍️</span></div>
+        <label class="field-label" for="quickNote">Your note</label>
+        <textarea id="quickNote" rows="4" placeholder="Write a reminder, formula, or study idea..."></textarea>
+        <div class="note-actions"><span id="noteStatus">Saved on this device only</span><button class="primary-btn" id="saveNote">Save Note</button></div>
+      </section>
+    </section>
+
+    <section class="panel links-panel" id="links">
+      <div class="section-heading compact"><div><p class="eyebrow">TRUSTED STARTING POINTS</p><h2>Useful Links</h2><p>Always verify deadlines and requirements on official websites.</p></div></div>
+      <div class="link-chips">
+        <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">💼 National Career Service ↗</a>
+        <a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener">🪪 DigiLocker ↗</a>
+        <a href="https://www.nta.ac.in/" target="_blank" rel="noopener">📝 NTA ↗</a>
+        <a href="https://www.education.gov.in/" target="_blank" rel="noopener">🏛️ Ministry of Education ↗</a>
+      </div>
+    </section>
+
+    <section class="bottom-banner"><div class="banner-icon">🎓</div><div><p class="eyebrow">YOUR FUTURE STARTS TODAY</p><h2>Learn today. Build your tomorrow.</h2><p>Small progress is still progress. Keep learning!</p></div><a href="#tools" class="banner-button">Explore tools <span>→</span></a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-icon">🎓</span><span><b>Student<span>Tools</span></b><small>Learn · Study · Grow</small></span></a><p>Made for learners, by learners. <span>Keep growing ✨</span></p><small>StudentTools is an independent educational tools website, not an official government portal.</small></footer>
+
+  <div class="modal-backdrop hidden" id="toolModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-head"><div><p class="eyebrow">STUDENTTOOLS</p><h2 id="modalTitle">Tool</h2></div><button class="close-modal" id="closeModal" aria-label="Close">×</button></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
